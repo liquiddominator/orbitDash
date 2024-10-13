@@ -3,41 +3,7 @@
 	<head>
 		<title>Orbit Dash</title>
 		<link rel="shortcut icon" id="favicon" />
-
-		<style>
-			body {
-				background: #5c91db;
-			}
-
-			#wrap {
-				background: #2b67bb;
-				box-shadow: inset 0 0 0 1px #404040, 0 0 0 1px #000;
-				left: 50%;
-				opacity: 0;
-				padding: 10px;	
-				position: absolute;
-				top: 50%;
-				transition: opacity 1.5s;
-			}
-
-			.loaded #wrap {				
-				opacity: 1;			
-			}
-
-			#wrap-inner {
-				background: #000;				
-				overflow: hidden;
-				position: relative;				
-			}
-
-			canvas {
-				cursor: crosshair;
-				display: block;
-				left: 0;
-				position: absolute;
-				top: 0;
-			}
-		</style>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<div id="wrap">
