@@ -17,8 +17,8 @@ $.init = function() {
 	$.ctxbg4 = $.cbg4.getContext( '2d' );
 	$.ctxmg = $.cmg.getContext( '2d' );
 	$.ctxfg = $.cfg.getContext( '2d' );
-	$.cw = $.cmg.width = $.cfg.width = 800;
-	$.ch = $.cmg.height = $.cfg.height = 600;
+	$.cw = $.cmg.width = $.cfg.width = 1400;
+	$.ch = $.cmg.height = $.cfg.height = 840;
 	$.wrap.style.width = $.wrapInner.style.width = $.cw + 'px';
 	$.wrap.style.height = $.wrapInner.style.height = $.ch + 'px';
 	$.wrap.style.marginLeft = ( -$.cw / 2 ) - 10 + 'px';
@@ -1066,7 +1066,7 @@ $.setState = function( state ) {
 			title: 'MENU',
 			action: function() {
 				$.mouse.down = 0;
-				if( window.confirm( '¿Estas seguro que quieres finalizar la partida y regresar al menu?') ) {
+				if( window.confirm( 'Estas seguro que quieres finalizar la partida y regresar al menu?') ) {
 					$.mousescreen();
 					$.setState( 'menu' );
 				}			
